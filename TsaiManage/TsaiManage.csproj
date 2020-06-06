@@ -119,6 +119,7 @@
     <Content Include="Login.aspx" />
     <Content Include="test.aspx" />
     <Content Include="test.html" />
+    <Content Include="UserControl\ucHead.ascx" />
     <Content Include="UserControl\UcNavBar.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -161,6 +162,13 @@
     </Compile>
     <Compile Include="test.aspx.designer.cs">
       <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ucHead.ascx.cs">
+      <DependentUpon>ucHead.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucHead.ascx.designer.cs">
+      <DependentUpon>ucHead.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\UcNavBar.ascx.cs">
       <DependentUpon>UcNavBar.ascx</DependentUpon>

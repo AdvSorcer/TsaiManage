@@ -1,25 +1,15 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Create.aspx.cs" Inherits="TsaiManage.Create" %>
 
 <%@ Register Src="~/UserControl/UcNavBar.ascx" TagPrefix="uc1" TagName="UcNavBar" %>
-
+<%@ Register Src="~/UserControl/ucHead.ascx" TagPrefix="uc1" TagName="ucHead" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>微帳本</title>
-    <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-</head>
+<uc1:ucHead runat="server" ID="ucHead" />
 <body>
     <form id="form1" runat="server">
-        <uc1:UcNavBar runat="server" id="UcNavBar" />
+        <uc1:UcNavBar runat="server" ID="UcNavBar" />
 
         <div id="container">
             <div class="d-flex justify-content-center">
@@ -62,12 +52,11 @@
                     </tr>
                 </table>
             </div>
-            <div style="height: 20px; ">
-             
+            <div style="height: 20px;">
             </div>
             <div class="d-flex justify-content-center">
                 <asp:Button ID="btn_ok" CssClass="btn btn-primary" runat="server" Text="送出" OnClick="btn_ok_Click" />
-                <div style="width:20px"></div>
+                <div style="width: 20px"></div>
                 <asp:Button ID="btn_cancel" CssClass="btn btn-secondary" runat="server" Text="取消" OnClick="btn_cancel_Click" />
             </div>
         </div>
