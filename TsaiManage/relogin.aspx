@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col"></div>
             <div class="col">
-                <asp:Button ID="btn_reload" runat="server" Text="重新登入" CssClass="btn btn-primary" OnClick="btn_reload_Click" style="height: 27px" />
+                <asp:Button ID="btn_reload" runat="server" Text="重新登入" CssClass="btn btn-primary" OnClick="btn_reload_Click" style=" margin-top:100px" />
             </div>
             <div class="col"></div>
         </div>

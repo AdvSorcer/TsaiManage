@@ -22,6 +22,7 @@ namespace TsaiManage
             }
             
         }
+
         void init(string id)
         {
           

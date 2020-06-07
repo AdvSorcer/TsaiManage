@@ -2,6 +2,8 @@
 
 <%@ Register Src="~/UserControl/UcNavBar.ascx" TagPrefix="uc1" TagName="UcNavBar" %>
 <%@ Register Src="~/UserControl/ucHead.ascx" TagPrefix="uc1" TagName="ucHead" %>
+<%@ Register Src="~/UserControl/ucIdentify.ascx" TagPrefix="uc1" TagName="ucIdentify" %>
+
 
 <!DOCTYPE html>
 
@@ -10,7 +12,7 @@
 <body>
     <form id="form1" runat="server">
         <uc1:UcNavBar runat="server" ID="UcNavBar" />
-
+        <uc1:ucIdentify runat="server" id="ucIdentify" />
         <div id="container">
             <div class="d-flex justify-content-center">
                 <table>

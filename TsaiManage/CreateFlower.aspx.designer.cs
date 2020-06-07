@@ -11,7 +11,7 @@ namespace TsaiManage
 {
 
 
-    public partial class Create
+    public partial class CreateFlower
     {
 
         /// <summary>
@@ -60,31 +60,22 @@ namespace TsaiManage
         protected global::System.Web.UI.WebControls.TextBox tbx_item;
 
         /// <summary>
-        /// tbx_income 控制項。
+        /// tbx_count 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbx_income;
+        protected global::System.Web.UI.WebControls.TextBox tbx_count;
 
         /// <summary>
-        /// tbx_price 控制項。
+        /// tbx_who 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbx_price;
-
-        /// <summary>
-        /// tbx_name 控制項。
-        /// </summary>
-        /// <remarks>
-        /// 自動產生的欄位。
-        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbx_name;
+        protected global::System.Web.UI.WebControls.TextBox tbx_who;
 
         /// <summary>
         /// tbx_date 控制項。

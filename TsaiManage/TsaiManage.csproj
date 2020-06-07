@@ -112,19 +112,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CreateFlower.aspx" />
     <Content Include="css\timeline.css" />
     <Content Include="Edit.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Create.aspx" />
+    <Content Include="Flower.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="history.html" />
     <Content Include="relogin.aspx" />
     <Content Include="UserControl\ucHead.ascx" />
+    <Content Include="UserControl\ucIdentify.ascx" />
     <Content Include="UserControl\UcNavBar.ascx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateFlower.aspx.cs">
+      <DependentUpon>CreateFlower.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateFlower.aspx.designer.cs">
+      <DependentUpon>CreateFlower.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Edit.aspx.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -141,6 +151,13 @@
     </Compile>
     <Compile Include="Create.aspx.designer.cs">
       <DependentUpon>Create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flower.aspx.cs">
+      <DependentUpon>Flower.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flower.aspx.designer.cs">
+      <DependentUpon>Flower.aspx</DependentUpon>
     </Compile>
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -170,6 +187,13 @@
     </Compile>
     <Compile Include="UserControl\ucHead.ascx.designer.cs">
       <DependentUpon>ucHead.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\ucIdentify.ascx.cs">
+      <DependentUpon>ucIdentify.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\ucIdentify.ascx.designer.cs">
+      <DependentUpon>ucIdentify.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControl\UcNavBar.ascx.cs">
       <DependentUpon>UcNavBar.ascx</DependentUpon>

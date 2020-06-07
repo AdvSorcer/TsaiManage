@@ -1,9 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Edit.aspx.cs" Inherits="TsaiManage.Edit" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CreateFlower.aspx.cs" Inherits="TsaiManage.CreateFlower" %>
 
 <%@ Register Src="~/UserControl/UcNavBar.ascx" TagPrefix="uc1" TagName="UcNavBar" %>
 <%@ Register Src="~/UserControl/ucHead.ascx" TagPrefix="uc1" TagName="ucHead" %>
 <%@ Register Src="~/UserControl/ucIdentify.ascx" TagPrefix="uc1" TagName="ucIdentify" %>
-
 
 
 <!DOCTYPE html>
@@ -12,11 +11,9 @@
 <uc1:ucHead runat="server" ID="ucHead" />
 <body>
     <form id="form1" runat="server">
-
+        <uc1:UcNavBar runat="server" ID="UcNavBar" />
+        <uc1:ucIdentify runat="server" id="ucIdentify" />
         <div id="container">
-
-            <uc1:ucnavbar runat="server" id="UcNavBar" />
-            <uc1:ucIdentify runat="server" ID="ucIdentify" />
             <div class="d-flex justify-content-center">
                 <table>
                     <tr>
@@ -26,26 +23,17 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>收入 : </td>
+                        <td>數量 : </td>
                         <td>
-                            <asp:TextBox ID="tbx_income" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="tbx_count" runat="server"></asp:TextBox>
                             純數字 (無也要輸入0)
                    
                         </td>
                     </tr>
                     <tr>
-                        <td>支出 : </td>
+                        <td>誰 : </td>
                         <td>
-                            <asp:TextBox ID="tbx_price" runat="server"></asp:TextBox>
-                            純數字 (無也要輸入0)
-                   
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>人名 : </td>
-                        <td>
-                            <asp:TextBox ID="tbx_name" runat="server"></asp:TextBox>
-
+                            <asp:TextBox ID="tbx_who" runat="server"></asp:TextBox>
                         </td>
                     </tr>
                     <tr>
