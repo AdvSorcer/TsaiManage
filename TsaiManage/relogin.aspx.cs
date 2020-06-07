@@ -7,11 +7,17 @@ using System.Web.UI.WebControls;
 
 namespace TsaiManage
 {
-    public partial class test : System.Web.UI.Page
+    public partial class relogin : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btn_reload_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("/Login.aspx");
         }
     }
 }

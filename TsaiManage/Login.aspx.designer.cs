@@ -15,6 +15,15 @@ namespace TsaiManage
     {
 
         /// <summary>
+        /// ucHead 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::TsaiManage.UserControl.ucHead ucHead;
+
+        /// <summary>
         /// form1 控制項。
         /// </summary>
         /// <remarks>
@@ -22,5 +31,23 @@ namespace TsaiManage
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
+        /// <summary>
+        /// input_pw 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword input_pw;
+
+        /// <summary>
+        /// btn_submit 控制項。
+        /// </summary>
+        /// <remarks>
+        /// 自動產生的欄位。
+        /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_submit;
     }
 }

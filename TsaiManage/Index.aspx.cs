@@ -11,9 +11,27 @@ namespace TsaiManage
         string connStr = ConfigurationManager.ConnectionStrings["myConnectionString"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-            connectMysql();
+
+            if (Session["stamp"] == null)
+            {
+                redirect404();
+            }
+            else
+            {
+                string id = Session["stamp"].ToString();
+
+                if (id == "ok")
+                {
+                    connectMysql();
+                }
+            }
+         
         }
 
+        void redirect404()
+        {
+            Response.Redirect("/relogin.aspx");
+        }
         void connectMysql()
         {
 

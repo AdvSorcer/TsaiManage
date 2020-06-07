@@ -13,5 +13,26 @@ namespace TsaiManage
         {
 
         }
+
+        void check()
+        {
+            string password = input_pw.Value;
+            if (password == "")
+            {
+                Session.Add("stamp", "non");
+                return;
+            }
+            if (password == "3420551")
+            {
+                Session.Add("stamp", "ok");
+                Response.Redirect("/index.aspx");
+            }
+        }
+
+
+        protected void btn_submit_Click(object sender, EventArgs e)
+        {
+            check();
+        }
     }
 }
